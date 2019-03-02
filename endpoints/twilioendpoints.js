@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.post('/sms/', function(req, res) {
   const twiml = new MessagingResponse();
   console.log(req.body.Body)
+  console.log(req.body.From)
 /*
   if(req.body.Body == "Yeet"){
     twiml.message('The Robots are coming! Head for the hills!');
@@ -15,7 +16,7 @@ app.post('/sms/', function(req, res) {
     twiml.message('shit');
   }*/
 
-
+  twiml.message(req.body.Body)
 
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
