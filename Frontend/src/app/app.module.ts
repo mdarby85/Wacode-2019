@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { IssueService } from './issue.service';
 
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -21,7 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppRoutingModule,
     AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [IssueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
