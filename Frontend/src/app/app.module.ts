@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { SignupComponent } from './pages/signup/signup.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+import { BottombarComponent } from './components/bottombar/bottombar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    RoutingComponents,
+    BottombarComponent,
   ],
   imports: [
     BrowserModule,
