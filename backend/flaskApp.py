@@ -2,6 +2,7 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import Message, MessagingResponse
 app = Flask(__name__)
 from twilioservice import twilioservice
+from frontendservice import frontendservice
 
 @app.route("/")
 def hello():
@@ -38,12 +39,20 @@ def sms():
     	resp = MessagingResponse()
     	resp.message("Payment was made to user")
     	return str(resp)
-    
-   	
 
+
+@app.route("/api/loginuser", methods=['GET'])
+def loginUser():
+	number = request.form['number']
+	password = request.form['password']
+
+    user = frontendservice.checkIfValidUser(number, password)
+
+    if user == None:
+        return ""
+    else:
+        return user.json()
 
 
 if __name__ == '__main__':
     app.run()
-
-
