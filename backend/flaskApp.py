@@ -64,5 +64,11 @@ def signupUser():
 
     frontendservice.saveUser(number, firstname, lastname, password, currentBalance)
 
+@app.route("/api/getuser", methods=['GET')
+def getUser():
+    number = request.form['number']
+
+    return frontendservice.getUser(number)
+
 if __name__ == '__main__':
     app.run()
