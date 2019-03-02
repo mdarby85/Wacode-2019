@@ -5,7 +5,6 @@ import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
-import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { BottombarComponent } from './components/bottombar/bottombar.component';
 
 @NgModule({
