@@ -19,6 +19,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "mongoclient": "^1.0.3",
     "twilio": "^3.29.0"
   }
 }
