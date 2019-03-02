@@ -1,14 +1,21 @@
 const http = require('http');
 const express = require('express');
+const bodyParser = require('body-parser');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const app = express();
-
-app.post('/sms/', (req, res) => {
+app.use(bodyParser.urlencoded({extended: false}));
+app.post('/sms/', function(req, res) {
   const twiml = new MessagingResponse();
-  
+  console.log(req.body.Body)
+/*
+  if(req.body.Body == "Yeet"){
+    twiml.message('The Robots are coming! Head for the hills!');
+  }else{
+    twiml.message('shit');
+  }*/
 
-  twiml.message('The Robots are coming! Head for the hills!');
+
 
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
