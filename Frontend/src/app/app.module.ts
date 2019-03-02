@@ -6,6 +6,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { BottombarComponent } from './components/bottombar/bottombar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { BottombarComponent } from './components/bottombar/bottombar.component';
     JumbotronComponent,
     RoutingComponents,
     BottombarComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

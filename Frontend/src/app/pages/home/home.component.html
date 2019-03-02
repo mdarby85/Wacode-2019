@@ -1,5 +1,14 @@
+<app-navbar></app-navbar>
 <app-jumbotron></app-jumbotron>
 
-<h1>welcome to the home page</h1>
+<div class="container-fluid">
+  <h4 class="title">Welcome {{firstname}}!</h4>
+
+  <h4 class="title">Balance: </h4>
+  <button type="submit" class="btn btn-primary" routerLink="managefunds">Manage Funds</button>
+
+  <h4 class="title">Transaction History: </h4>
+
+</div>
 
 <app-bottombar></app-bottombar>

@@ -3,11 +3,14 @@
   text-align: center;
   background-color: lightgray;
   padding: none;
+  bottom: 0;
+  width: 100%;
 }
 
 .container-fluid {
   padding: 0;
   padding-bottom: 0px;
+  padding-top: 10%;
   margin-bottom: 0px;
   width: auto;
   height: 1%;

@@ -1,19 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Wacode 2019</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="/login">Login</a>
-      <a class="nav-item nav-link active" href="">Register<span class="sr-only">(current)</span></a>
-    </div>
-  </div>
-</nav>
-
 <app-jumbotron></app-jumbotron>
 <div class="container-fluid" id="signup">
-<h2 class="title">Sign Up</h2>
+<h4 class="title">Sign Up</h4>
 <form action="">
   <div class="form-group">
     <label for="firstname">First Name: </label>
@@ -36,6 +23,7 @@
     <input type="password" class="form-control" id="passwordconfirm">
   </div>
   <button type="submit" class="btn btn-primary">Sign Up</button>
+  <p>Already have an account? Login <a routerLink="/login">here</a>.</p>
 </form>
 </div>
 <app-bottombar></app-bottombar>

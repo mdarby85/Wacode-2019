@@ -1,32 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Wacode 2019</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="login">Login<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="signup">Register</a>
-    </div>
+<app-jumbotron></app-jumbotron>
+<div class="container-fluid" id="login">
+  <h4 class="title">Login</h4>
+  <div>
+    <form action="">
+      <div class="form-group text-left">
+        <label for="username">Phone Number:</label>
+        <input type="tel" class="form-control" id="phonenumber">
+      </div>
+      <div class="form-group text-left">
+        <label for="password">Password: </label>
+          <input type="password" class="form-control" id="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <p>Don't have an account? Sign up <a routerLink="/signup">here</a>.</p>
+    </form>
   </div>
-</nav>
-
-<div class="container text-center mt-4" style="width: 35%;">
-    <div class="card">
-        <div class="card-body">
-            <div>
-                <form action="">
-                  <div class="form-group text-left">
-                    <label for="username">username:</label>
-                    <input type="text" class="form-control form-control-sm" id="username">
-                  </div>
-                  <div class="form-group text-left">
-                    <label for="password">password: </label>
-                    <input type="password" class="form-control form-control-sm" id="password">
-                  </div>
-                  <button type="submit" class="btn btn-sm btn-primary">login</button>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
+<app-bottombar></app-bottombar>
