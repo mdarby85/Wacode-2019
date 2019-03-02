@@ -54,5 +54,15 @@ def loginUser():
         return user.json()
 
 
+@app.route("/api/signup", methods=['GET'])
+def signupUser():
+    number = request.form['number']
+    password = request.form['password']
+    firstname = requst.form['firstname']
+    lastname = request.form['lastname']
+    currentBalance = 0
+
+    frontendservice.saveUser(number, firstname, lastname, password, currentBalance)
+
 if __name__ == '__main__':
     app.run()
