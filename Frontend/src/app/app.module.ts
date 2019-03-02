@@ -3,19 +3,25 @@ import { NgModule } from '@angular/core';
 import { IssueService } from './issue.service';
 
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './pages/signup/signup.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { BottombarComponent } from './components/bottombar/bottombar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    RoutingComponents,
+    BottombarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
+=======
+    AngularFontAwesomeModule
+>>>>>>> 3ac434ffc5ce41dea84c5b0997157eab210f03ef
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
