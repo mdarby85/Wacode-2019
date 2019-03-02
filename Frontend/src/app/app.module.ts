@@ -18,10 +18,7 @@ import { BottombarComponent } from './components/bottombar/bottombar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
-=======
     AngularFontAwesomeModule
->>>>>>> 3ac434ffc5ce41dea84c5b0997157eab210f03ef
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
