@@ -7,7 +7,7 @@ Goal: Send payments from SMS
 
   Text: SMS/Twilio
   
-  Backend: Node/Express
+  Backend: Python/Flask
   
   Frontend: Angular & Axios or equiv. (need to make http requests)
   
