@@ -28,6 +28,6 @@ class frontendservice:
 
 m = frontendservice()
 
-m.saveUser("********", "Ruthie", "Bury", "Andy", 0)
+m.saveUser("********", "****", "*****", "Andy", 0)
 
-print(m.checkIfValidUser("+15126946416", "11"))
+print(m.checkIfValidUser("********", "11"))
